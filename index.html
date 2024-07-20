@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohi's Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:ital,wght@0,300..900;1,300..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navigation">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-links" class="nav-links">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('menu')">Menu</a>
+            <a href="#" onclick="showPage('music')">Music</a>
+            <a href="#" onclick="showPage('jobs')">Jobs</a>
+        </nav>
+    </header>
+
+    <section id="home" class="page-content">
+        <p class="page-heading">Come in and experience...</p>
+        <ul>
+            <li>Specialty Coffee and Tea</li>
+            <li>Freshly made sandwiches</li>
+            <li>Bagels, Muffins, and Organic Snacks</li>
+            <li>Music and Poetry Readings</li>
+            <li>Open mic nights</li>
+        </ul>
+        <img src="coffee.png" alt="Image of a Coffee" class="menu-image">
+    </section>
+
+    <section id="menu" class="page-content" style="display: none;">
+        <img src="menu.png" alt="Image of a Coffee" class="menu-image" height="200">
+        <p class="page-heading">Coffee</p>
+        <ul class="MCoffee">
+            <li>Espresso ....................... $2.50</li>
+            <li>Americano .................... $3.00</li>
+            <li>Latte ............................. $4.00</li>
+            <li>Mocha ........................... $2.50</li>
+            <li>Iced Coffee ................... $3.00</li>
+            <li>Iced Latte ..................... $4.00</li>
+        </ul>
+        <p class="page-heading">Pastries</p>
+        <ul class="MPastries">
+            <li>Bagel .......................... $2.50</li>
+            <li>Muffin ......................... $3.00</li>
+            <li>Croissant ..................... $4.00</li>
+            <li>Scone ......................... $2.50</li>
+        </ul>
+    </section>
+
+    <section id="music" class="page-content" style="display: none;">
+        <a class="music-container"href="https://open.spotify.com/playlist/1i0nUJ13w57XqhgNIRpWwC?si=59abcd6e98b642ec"><img src="music.png" height="200"/></a>
+        <a>Listen to our playlists below</a>
+        <br/>
+        <a href="https://open.spotify.com/playlist/1i0nUJ13w57XqhgNIRpWwC?si=59abcd6e98b642ec" target="_blank"><img src="spotify.png">Spotify</a>
+       
+    </section>
+
+    <section id="jobs" class="page-content" style="display: none;">
+        <p class="jobs-heading">We are looking for a <strong>Barista</strong>!</p>
+        <img src="hiring.gif" id="hiring-image">
+        <ul class="job">
+            <li>Students are welcome to apply</li>
+            <li>With/without experience</li>
+            <li>Part-time/Full-time</li>
+            <li>Send us a message at <strong>kapenikohi@gmail.com</strong></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

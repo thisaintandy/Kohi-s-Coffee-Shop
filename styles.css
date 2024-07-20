@@ -1,0 +1,134 @@
+/* Base styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header.navigation {
+    background: #FAF9F8;
+    width: 90%;
+    max-width: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+header.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header.navigation a:hover {
+    text-decoration: underline;
+}
+
+#home, #jobs, #menu, #music {
+    background: #E8DFD8;
+    width: 90%;
+    max-width: 860px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: "Rubik", sans-serif;
+}
+
+#menu ul{
+    padding-left: 35%;
+}
+
+#music a{
+    text-align: center;
+}
+
+.page-content p.page-heading, 
+.page-content p.jobs-heading {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.menu-image,
+.music-image {
+    display: block;
+    margin: 20px auto;
+}
+
+.music-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#hiring-image{
+    padding-left: 25%;
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    header.navigation {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 10px 0;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    header.navigation {
+        justify-content: center;
+    }
+    #home, #jobs, #menu, #music {
+        font-size: 18px;
+    }
+    .page-content p.page-heading, 
+    .page-content p.jobs-heading {
+        font-size: 25px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #FAF9F8;
+        padding: 10px 0;
+    }
+    .nav-links a {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+}
